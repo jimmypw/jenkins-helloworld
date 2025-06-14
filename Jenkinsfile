@@ -16,8 +16,8 @@ podTemplate (containers: [
                 sh 'cargo test'
             }
             stage('build') {
-                sh 'cargo build --target develop'
-                sh 'cargo build --target release'
+                sh 'cargo build'
+                sh 'cargo build --release'
             }
         }
     }
